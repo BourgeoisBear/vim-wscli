@@ -16,7 +16,7 @@ Then clone this plugin into your Vim plugins directory:
 cd ~/.vim/pack/plugins/start
 git clone https://github.com/BourgeoisBear/vim-wscli
 ```
-Rebuild helptags with `helptags ALL`, then see `:help wscli` for more options.
+Rebuild helptags with `:helptags ALL`, then see `:help wscli` for more options.
 
 ## Commands
 ```
