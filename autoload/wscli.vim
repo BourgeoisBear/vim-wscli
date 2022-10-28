@@ -47,15 +47,16 @@ function! wscli#Toggle()
 		return
 	endif
 
+	" \ 'cwd': expand('$HOME/Projects/wscli'),
 	let job_opts = {
-				\ 'cwd': expand('$HOME/Projects/wscli'),
 				\ 'in_io': 'pipe',
 				\ 'term_rows': 14,
 				\ 'norestore': 1,
 				\ 'term_finish': 'close',
 				\ }
 
-	let t:wscli_buf = term_start(['go', 'run', '.'], job_opts)
+	"let t:wscli_buf = term_start(['go', 'run', '.'], job_opts)
+	let t:wscli_buf = term_start([expand('$HOME/go/bin/wscli')], job_opts)
 	let t:wscli_job = term_getjob(t:wscli_buf)
 	let t:wscli_chan = job_getchannel(t:wscli_job)
 
