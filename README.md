@@ -51,8 +51,10 @@ Clear All Specified HTTP Headers
 
 ## Usage
 
-| Command      | Description                                               |
-| ------------ | --------------------------------------------------------- |
-| :WscliToggle | open/close wscli websocket session in new terminal window |
-| <leader>ws   | *NORMAL MODE*: send paragraph under cursor to wscli       |
-| <leader>ws   | *VISUAL MODE*: send visual selection to wscli             |
+| Command        | Description                                               |
+| -------------- | --------------------------------------------------------- |
+| `:WscliToggle` | open/close wscli websocket session in new terminal window |
+| `<leader>ws`   | *NORMAL MODE*: send paragraph under cursor to wscli       |
+| `<leader>ws`   | *VISUAL MODE*: send visual selection to wscli             |
+
+*NOTE*: `<leader>ws` will automatically open a new `wscli` session if one is not already open.
