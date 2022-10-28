@@ -1,0 +1,26 @@
+*wscli.txt*                                            Websocket Client Interface
+*'vim-wscli'* *'wscli'*
+===============================================================================
+PREREQUISITES
+
+  *wscli* websocket client & go compiler:
+
+  go install -v github.com/BourgeoisBear/wscli
+
+===============================================================================
+USAGE
+
+  *:WscliToggle*  - open/close *wscli* websocket session in new terminal window
+  *<leader>ws*    - *NORMAL MODE*: send paragraph under cursor to *wscli*
+                    *VISUAL MODE*: send visual selection to *wscli*
+
+===============================================================================
+FUNCTIONS
+
+  *wscli#Toggle()*        - open/close *wscli* session in new terminal window
+  *wscli#SendParagraph()* - send paragraph under cursor to *wscli* session
+  *wscli#SendVisual()*    - send visual selection to *wscli* session
+  *wscli#Send(text)*      - send *text* to *wscli* session
+
+===============================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl
